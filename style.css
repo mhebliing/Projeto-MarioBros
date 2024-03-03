@@ -1,0 +1,328 @@
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+
+
+
+    background: url(./video/video.mp4) no-repeat center;
+    border-collapse: separate;
+}
+
+header a {
+
+color: #ffff;
+text-decoration-line: none;
+
+}
+
+header {
+    display: flex;
+    margin: 30px;
+    gap: 30px;
+    
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    
+
+    
+}
+
+ header a:hover {
+opacity: 0.5;
+color: #c51111;
+transition: 0.5s color ease-in-out;
+font-size: 20px;
+
+}
+
+
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    list-style: none;
+    color: #ffff;
+    font-size: 18px
+}
+
+header .img-logo {
+
+    height: 60px;
+
+}
+
+
+main .img-principal {
+
+    height: 200px;
+    bottom: 13px;
+    position: relative;
+}
+
+main button {
+
+    background-color: #c51111;
+    color: white;
+    font-size: 12px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 25px;
+    left: 21px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+main button:hover {
+    background-color: #0CBB06;
+    color: #0A7BF6;
+    transition: 1s ease-in-out;
+    font-size: 15px;
+    width: 250px;
+
+
+}
+
+
+main p {
+    font-size: 20px;
+    width: 600px;
+    color: #ffff;
+}
+
+
+main .container-rigth {
+
+    width: 50%;
+    
+}
+
+
+.container-left {
+
+   
+
+
+}
+
+
+
+
+main .img-mario {
+
+    height: 500px;
+    position: relative;
+}
+
+video {
+
+        position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+
+
+}
+
+.left {
+
+display: inline-block;
+
+}
+
+.rigth {
+
+    display: inline-block;
+
+}
+
+/* DIV ADICIONA UM SOMBREADO NO FUNDO DA PAGINA  LINEAR GRADIENT*/
+.mascara-video {
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+.whatsapp-icone {
+
+    right: 20px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 34%;
+    left: -300px;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+    width: 300px;
+    z-index: 2;
+    transform: translateX(-50%);
+    transition: 1s ease-in-out;
+}
+
+.formulario-fale-conosco button {
+
+    background-color: #c51111;
+    color: white;
+    font-size: 12px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+
+.formulario-fale-conosco button:hover {
+    background-color: #0CBB06;
+    color: #0A7BF6;
+    transition: 1s ease-in-out;
+    font-size: 15px;
+  
+
+}
+
+input {
+     height: 35px;
+     border-radius: 5px;
+     border: 1px solid gray;
+     padding-left: 10px;
+     outline-color: #0CBB06 ;
+}
+
+textarea {
+
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: #0CBB06 ;
+    height: 130px;
+    width: 277px;
+    
+}
+
+
+/* posição final  
+ top: 34%;
+left: 50%;
+translate: -50%;
+*/
+
+.mascara-formulario {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85% );
+    transition: 1s ease-in-out;
+}
+
+@media (max-width: 1100px) {
+    main p {
+        font-size: 15px;
+        width: 300px;
+        position: relative;
+        left: 37px;
+    }
+
+    .wrapper {
+       
+         flex-direction: column;
+    }
+
+    main .img-mario {
+        height: 299px;
+        top: 31px;
+    }
+
+    main button {
+        
+        left: 65px;
+        transform: translateX(-5%);
+    
+    }
+
+    .whatsapp-icone {
+        height: 30px;
+      
+    }
+
+    .rigth {
+        margin-top: -48px;
+    }
+
+
+    header nav li {
+        font-size: 13px;
+    }
+
+    header a:hover {
+        font-size: 11px;
+        
+        }
+
+        .formulario-fale-conosco {
+            width: 250px;
+        
+        }
+
+
+        .formulario-fale-conosco button {
+            
+            font-size: 11px;
+            width: 160px;
+            height: 40px;
+           
+        }
+
+        textarea {
+            width: 230px;
+        }
+
+
+        .formulario-fale-conosco button:hover {
+    
+            font-size: 10px;
+
+        }
+
+}
